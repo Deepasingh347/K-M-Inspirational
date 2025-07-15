@@ -1,0 +1,123 @@
+/* Google Fonts */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #fdfcfb;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+header .container {
+  max-width: 1000px;
+  margin: auto;
+}
+nav a {
+  color: #f0f0f0;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: linear-gradient(to right, #fefefe, #f5f5f5);
+}
+.hero-text {
+  max-width: 500px;
+  margin-left: 2rem;
+}
+.hero-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+}
+.author-img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.btn,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn {
+  background: #007bff;
+  color: white;
+}
+.btn:hover {
+  background: #0056b3;
+}
+.btn-secondary {
+  background: #28a745;
+  color: white;
+}
+.btn-secondary:hover {
+  background: #1e7e34;
+}
+
+/* Book Section */
+.book-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem;
+  justify-content: center;
+}
+.book-cover {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
+}
+.book-details h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+
+/* Form Section */
+.form-section {
+  padding: 3rem;
+  max-width: 600px;
+  margin: auto;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
