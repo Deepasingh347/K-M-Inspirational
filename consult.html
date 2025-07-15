@@ -44,6 +44,14 @@
 {% endwith %}
 
     </section>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<form method="POST" action="/consult">
+  ...
+  <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+  <button type="submit">Submit</button>
+</form>
+
 
     <footer>
       <p>
@@ -51,5 +59,6 @@
         <a href="mailto:author@example.com">author@example.com</a>
       </p>
     </footer>
+    
   </body>
 </html>
