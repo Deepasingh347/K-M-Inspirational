@@ -24,18 +24,30 @@
 
     <section class="form-section">
       <h2>Request a Session</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="date" required />
-        <textarea rows="4" placeholder="Your Message (Optional)"></textarea>
-        <button type="submit" class="btn">Submit</button>
-      </form>
+  <form method="POST" action="/consult">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="date" name="date" required>
+  <textarea name="message" rows="4" placeholder="Your Message (Optional)"></textarea>
+  <button type="submit" class="btn">Submit</button>
+</form>
+
+<!-- Flash Message -->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul style="color: green;">
+      {% for msg in messages %}
+        <li>{{ msg }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
     </section>
 
     <footer>
       <p>
-        © 2025 [Author's Name] |
+        © 2025 [Krishna Murari Jha] |
         <a href="mailto:author@example.com">author@example.com</a>
       </p>
     </footer>
